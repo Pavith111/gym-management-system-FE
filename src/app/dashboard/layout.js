@@ -7,7 +7,7 @@ import React from "react";
 
 export default function GymManagementPage({ children }) {
   return (
-    <div className="flex bg-gradient-to-b from-gray-100 to-gray-900 h-screen flex-col">
+    <div className="flex bg-gradient-to-b from-gray-100 to-gray-900 max-h-screen">
       <SideBar />
       <div className="flex-1">
         <Navbar />
