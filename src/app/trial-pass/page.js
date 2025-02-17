@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
+import Link from "next/link";
 
 export default function FreePass() {
   const locations = [
@@ -43,18 +44,20 @@ export default function FreePass() {
           {/* Location List */}
           <div className="mt-6 space-y-6">
             {locations.map((location, index) => (
-              <div key={index} className="text-lg text-gray-800">
-                <p className="flex items-center justify-center gap-2 text-xl font-bold">
-                  📍 {location.city}
-                </p>
-                <p>{location.address}</p>
-                <p className="flex items-center justify-center gap-2 mt-2">
-                  📞 {location.phone}
-                </p>
-                {index < locations.length - 1 && (
-                  <hr className="w-1/3 mx-auto my-4 border-gray-400" />
-                )}
-              </div>
+              <Link href="/trial-pass/form">
+                <div key={index} className="text-lg text-gray-800">
+                  <p className="flex items-center justify-center gap-2 text-xl font-bold">
+                    📍 {location.city}
+                  </p>
+                  <p>{location.address}</p>
+                  <p className="flex items-center justify-center gap-2 mt-2">
+                    📞 {location.phone}
+                  </p>
+                  {index < locations.length - 1 && (
+                    <hr className="w-1/3 mx-auto my-4 border-gray-400" />
+                  )}
+                </div>
+              </Link>
             ))}
           </div>
         </div>

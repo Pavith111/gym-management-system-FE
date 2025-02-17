@@ -1,25 +1,29 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const reviews = [
   {
     name: "Thisara",
     gym: "PowerZone Fitness, Kalutara",
     rating: 3,
-    review: "PowerZone Fitness has top-notch equipment, a motivating atmosphere, and friendly staff—perfect for all fitness levels!",
+    review:
+      "PowerZone Fitness has top-notch equipment, a motivating atmosphere, and friendly staff—perfect for all fitness levels!",
     avatar: "/images/reviews/avatar1.jpg",
   },
   {
     name: "Parker",
     gym: "BlazeFit, Colombo 08",
     rating: 2,
-    review: "BlazeFit’s HIIT sessions are intense and fun! The trainers motivate you, and the fast-paced workouts make fitness exciting.",
+    review:
+      "BlazeFit’s HIIT sessions are intense and fun! The trainers motivate you, and the fast-paced workouts make fitness exciting.",
     avatar: "/images/reviews/avatar3.jpg",
   },
   {
     name: "Alex",
     gym: "Iron Haven, Kaduwela",
     rating: 4,
-    review: "Iron Haven is the ultimate gym for serious lifters—heavy-duty equipment, a strong community, and a no-nonsense vibe!",
+    review:
+      "Iron Haven is the ultimate gym for serious lifters—heavy-duty equipment, a strong community, and a no-nonsense vibe!",
     avatar: "/images/reviews/avatar2.jpg",
   },
 ];
@@ -33,25 +37,27 @@ const TrialPassReviews = () => {
           <h3 className="text-xl font-bold text-center lg:text-left mb-4">
             TRY KYRO FITNESS AND GET UP TO 1 MONTH OF PREMIUM ACCESS ON US
           </h3>
-          <div className="flex items-center py-10">
-            <div className="bg-gradient-to-r from-yellow-600 to-yellow-200 text-black rounded-xl p-6 flex items-center w-96 shadow-lg">
-              {/* Left Section */}
-              <div className="w-1/2 text-center">
-                <h2 className="text-lg font-bold">3 Day Trail</h2>
-                <h3 className="text-lg font-bold">Pass</h3>
-              </div>
+          <Link href="/trial-pass">
+            <div className="flex items-center py-10">
+              <div className="bg-gradient-to-r from-yellow-600 to-yellow-200 text-black rounded-xl p-6 flex items-center w-96 shadow-lg">
+                {/* Left Section */}
+                <div className="w-1/2 text-center">
+                  <h2 className="text-lg font-bold">3 Day Trail</h2>
+                  <h3 className="text-lg font-bold">Pass</h3>
+                </div>
 
-              {/* Divider */}
-              <div className="w-[2px] h-16 bg-black"></div>
+                {/* Divider */}
+                <div className="w-[2px] h-16 bg-black"></div>
 
-              {/* Right Section */}
-              <div className="w-1/2 text-center font-bold text-lg tracking-wide">
-                <p>SHAPE</p>
-                <p>YOUR</p>
-                <p>BODY</p>
+                {/* Right Section */}
+                <div className="w-1/2 text-center font-bold text-lg tracking-wide">
+                  <p>SHAPE</p>
+                  <p>YOUR</p>
+                  <p>BODY</p>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
 
         {/* Middle Divider */}

@@ -92,9 +92,11 @@ export default function GymScroller() {
 
         {/* View All Gyms Button */}
         <div className="mt-6">
-          <button className="bg-black text-white px-6 py-3 rounded-full font-bold text-lg shadow-lg hover:bg-red-500 transition">
-            View All Gyms
-          </button>
+          <Link href="/explore">
+            <button className="bg-black text-white px-6 py-3 rounded-full font-bold text-lg shadow-lg hover:bg-red-500 transition">
+              View All Gyms
+            </button>
+          </Link>
         </div>
       </div>
     </div>

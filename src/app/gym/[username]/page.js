@@ -1,6 +1,7 @@
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 const mockData = {
   "cross-fit": {
@@ -141,9 +142,11 @@ export default async function GymProfile({ params }) {
       </div>
 
       <div className="container mx-auto text-center my-10">
-        <button className="bg-black text-white px-6 py-3 rounded-full font-bold text-lg shadow-lg hover:bg-gray-800 transition">
-          Grab Your Trial Pass
-        </button>
+        <Link href="/trial-pass">
+          <button className="bg-black text-white px-6 py-3 rounded-full font-bold text-lg shadow-lg hover:bg-gray-800 transition">
+            Grab Your Trial Pass
+          </button>
+        </Link>
       </div>
       <Footer />
     </div>
