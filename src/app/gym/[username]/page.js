@@ -60,8 +60,8 @@ const mockData = {
 };
 
 export default async function GymProfile({ params }) {
-  const slug = (await params).slug;
-  const gymData = mockData[slug] || {};
+  const username = (await params).username;
+  const gymData = mockData[username] || {};
 
   return (
     <div className="bg-gradient-to-b from-gray-100 to-gray-300 min-h-screen">
